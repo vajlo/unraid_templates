@@ -81,8 +81,8 @@ output = lamemp3enc ! shout2send async=false mount=mopidy ip=X.X.X.X port=8000 p
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/mopidy/mopidy.conf</HostDir>
-      <ContainerDir>/etc/mopidy.conf</ContainerDir>
+      <HostDir>/mnt/user/appdata/mopidy/</HostDir>
+      <ContainerDir>/etc/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -91,14 +91,14 @@ output = lamemp3enc ! shout2send async=false mount=mopidy ip=X.X.X.X port=8000 p
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Media/Musik/</HostDir>
+      <HostDir>/mnt/user/Download/</HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="config" Target="/etc/mopidy.conf" Default="" Mode="rw" Description="Container Path: /mopidy.conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mopidy/mopidy.conf</Config>
+  <Config Name="config" Target="/etc/" Default="" Mode="rw" Description="Container Path: /mopidy.conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mopidy/</Config>
   <Config Name="Host Path 2" Target="/tmp/" Default="" Mode="rw" Description="Container Path: /tmp/snapfifo" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mopidy/tmp/</Config>
-  <Config Name="Host Path 3" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Musik/</Config>
+  <Config Name="Host Path 3" Target="/media" Default="" Mode="rw" Description="Container Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Download/</Config>
 </Container>
