@@ -121,6 +121,16 @@
   <Config
       Type="Path"
       Mode="rw"
+      Name="Backup Path"
+      Target="/var/opt/mssql/backup"
+      Default="/mnt/cache/appdata/ms-sql-server-2019/backup"
+      Description=""
+      Mask="false"
+      Display="always"
+      Required="true"></Config>
+  <Config
+      Type="Path"
+      Mode="rw"
       Name="Data Path"
       Target="/var/opt/mssql/data"
       Default="/mnt/cache/appdata/ms-sql-server-2019/data"
